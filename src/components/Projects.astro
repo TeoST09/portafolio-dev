@@ -1,0 +1,143 @@
+---
+import SectionHeading from './SectionHeading.astro';
+import parkingPreview from '../assets/sistema-parqueaderos.png';
+import cleanerPreview from '../assets/cleaner-preview.png';
+---
+
+<section id="proyectos" class="scroll-mt-24 py-16 sm:py-20">
+	<SectionHeading number="02" title="Proyectos seleccionados" />
+
+	<div class="grid gap-5 md:grid-cols-2">
+		<article class="group overflow-hidden rounded-2xl border border-white/10 bg-slate-950 transition hover:-translate-y-1 hover:border-white/20">
+			<a href="https://github.com/TeoST09/webChat" target="_blank" rel="noreferrer" aria-label="Abrir WebChat" class="relative block h-52 overflow-hidden bg-slate-900">
+				<img src="https://github.com/TeoST09/webChat/raw/main/preview.png" alt="Interfaz de la aplicación WebChat" loading="lazy" class="h-full w-full object-cover object-top transition duration-500 group-hover:scale-105" />
+				<span class="absolute left-5 top-4 rounded-full border border-white/20 bg-slate-950/70 px-3 py-1.5 font-mono text-xs text-white/80">Aplicación web · Tiempo real</span>
+				<span class="absolute bottom-4 right-5 font-mono text-xs text-white/70">01 ↗</span>
+			</a>
+			<div class="p-6">
+				<h3 class="text-xl font-bold text-white">WebChat</h3>
+				<p class="mt-3 text-sm leading-6 text-slate-400">Chat multiusuario con mensajes en tiempo real, historial persistente y recuperación de conexión. Construido con Socket.IO y almacenamiento en Turso (LibSQL).</p>
+				<ul class="mt-5 flex flex-wrap gap-2" aria-label="Tecnologías del proyecto">
+					<li class="rounded-md bg-white/10 px-2.5 py-1 font-mono text-xs text-amber-100">Node.js</li>
+					<li class="rounded-md bg-white/10 px-2.5 py-1 font-mono text-xs text-amber-100">Express</li>
+					<li class="rounded-md bg-white/10 px-2.5 py-1 font-mono text-xs text-amber-100">Socket.IO</li>
+					<li class="rounded-md bg-white/10 px-2.5 py-1 font-mono text-xs text-amber-100">Turso</li>
+				</ul>
+				<div class="mt-6 flex gap-4 border-t border-white/10 pt-4 text-sm">
+					<a href="https://github.com/TeoST09/webChat" target="_blank" rel="noreferrer" class="font-medium text-slate-300 transition hover:text-white">Código ↗</a>
+					<span class="ml-auto self-center text-xs text-slate-500">Sin demo pública</span>
+				</div>
+			</div>
+		</article>
+
+		<article class="group overflow-hidden rounded-2xl border border-white/10 bg-slate-950 transition hover:-translate-y-1 hover:border-white/20">
+			<a href="https://teost09.github.io/proyecto_js/" target="_blank" rel="noreferrer" aria-label="Abrir Proyecto JS Moderno" class="relative grid h-52 place-items-center overflow-hidden bg-gradient-to-br from-slate-800 via-slate-900 to-amber-950">
+				<span class="rounded-xl bg-amber-300 px-8 py-6 font-mono text-3xl font-bold text-slate-950">JS</span>
+				<span class="absolute left-5 top-4 rounded-full border border-white/20 bg-slate-950/70 px-3 py-1.5 font-mono text-xs text-white/80">Sitio web · JavaScript</span>
+				<span class="absolute bottom-4 right-5 font-mono text-xs text-white/70">02 ↗</span>
+			</a>
+			<div class="p-6">
+				<h3 class="text-xl font-bold text-white">Proyecto JS Moderno</h3>
+				<p class="mt-3 text-sm leading-6 text-slate-400">Sitio responsive de varias páginas con slider, artículos dinámicos, formularios validados, acordeón, reloj en tiempo real y datos guardados en localStorage.</p>
+				<ul class="mt-5 flex flex-wrap gap-2" aria-label="Tecnologías del proyecto">
+					<li class="rounded-md bg-white/10 px-2.5 py-1 font-mono text-xs text-amber-100">HTML5</li>
+					<li class="rounded-md bg-white/10 px-2.5 py-1 font-mono text-xs text-amber-100">CSS3</li>
+					<li class="rounded-md bg-white/10 px-2.5 py-1 font-mono text-xs text-amber-100">JavaScript</li>
+					<li class="rounded-md bg-white/10 px-2.5 py-1 font-mono text-xs text-amber-100">localStorage</li>
+				</ul>
+				<div class="mt-6 flex gap-4 border-t border-white/10 pt-4 text-sm">
+					<a href="https://teost09.github.io/proyecto_js/" target="_blank" rel="noreferrer" class="font-medium text-amber-200 transition hover:text-amber-100">Ver sitio ↗</a>
+					<a href="https://github.com/TeoST09/proyecto_js" target="_blank" rel="noreferrer" class="font-medium text-slate-300 transition hover:text-white">Código ↗</a>
+				</div>
+			</div>
+		</article>
+
+		<article class="group overflow-hidden rounded-2xl border border-white/10 bg-slate-950 transition hover:-translate-y-1 hover:border-white/20">
+			<a href="https://github.com/TeoST09/Backend/tree/main/StarMax" target="_blank" rel="noreferrer" aria-label="Abrir StarMax" class="relative block h-52 overflow-hidden bg-slate-900">
+				<img src="https://raw.githubusercontent.com/TeoST09/Backend/main/StarMax/assets/img/camiseta.png" alt="Producto de la tienda StarMax" loading="lazy" class="h-full w-full object-cover object-top transition duration-500 group-hover:scale-105" />
+				<span class="absolute left-5 top-4 rounded-full border border-white/20 bg-slate-950/70 px-3 py-1.5 font-mono text-xs text-white/80">Tienda online · PHP</span>
+				<span class="absolute bottom-4 right-5 font-mono text-xs text-white/70">03 ↗</span>
+			</a>
+			<div class="p-6">
+				<h3 class="text-xl font-bold text-white">StarMax</h3>
+				<p class="mt-3 text-sm leading-6 text-slate-400">Aplicación de catálogo y ventas con roles de administrador y cliente, gestión de productos y categorías, carrito y seguimiento de pedidos.</p>
+				<ul class="mt-5 flex flex-wrap gap-2" aria-label="Tecnologías del proyecto">
+					<li class="rounded-md bg-white/10 px-2.5 py-1 font-mono text-xs text-amber-100">PHP</li>
+					<li class="rounded-md bg-white/10 px-2.5 py-1 font-mono text-xs text-amber-100">MySQL</li>
+					<li class="rounded-md bg-white/10 px-2.5 py-1 font-mono text-xs text-amber-100">MVC</li>
+				</ul>
+				<div class="mt-6 flex gap-4 border-t border-white/10 pt-4 text-sm">
+					<a href="https://github.com/TeoST09/Backend/tree/main/StarMax" target="_blank" rel="noreferrer" class="font-medium text-slate-300 transition hover:text-white">Código ↗</a>
+					<span class="ml-auto self-center text-xs text-slate-500">Sin demo pública</span>
+				</div>
+			</div>
+		</article>
+
+		<article class="group overflow-hidden rounded-2xl border border-white/10 bg-slate-950 transition hover:-translate-y-1 hover:border-white/20">
+			<a href="https://github.com/TeoST09/SoftParty" target="_blank" rel="noreferrer" aria-label="Abrir Sistema de Parqueaderos" class="relative block h-52 overflow-hidden bg-slate-900">
+				<img src={parkingPreview.src} alt="Vista del sistema de parqueaderos: registro de vehículos e historial" loading="lazy" class="h-full w-full object-cover object-top transition duration-500 group-hover:scale-105" />
+				<span class="absolute left-5 top-4 rounded-full border border-white/20 bg-slate-950/70 px-3 py-1.5 font-mono text-xs text-white/80">Gestión de parqueadero · PHP</span>
+				<span class="absolute bottom-4 right-5 font-mono text-xs text-white/70">04 ↗</span>
+			</a>
+			<div class="p-6">
+				<h3 class="text-xl font-bold text-white">Sistema de Parqueaderos</h3>
+				<p class="mt-3 text-sm leading-6 text-slate-400">Sistema para gestionar ingresos y salidas de vehículos, consultar registros por fecha y estado, y generar o descargar facturas en PDF.</p>
+				<ul class="mt-5 flex flex-wrap gap-2" aria-label="Tecnologías del proyecto">
+					<li class="rounded-md bg-white/10 px-2.5 py-1 font-mono text-xs text-amber-100">PHP</li>
+					<li class="rounded-md bg-white/10 px-2.5 py-1 font-mono text-xs text-amber-100">MySQL</li>
+					<li class="rounded-md bg-white/10 px-2.5 py-1 font-mono text-xs text-amber-100">Bootstrap</li>
+					<li class="rounded-md bg-white/10 px-2.5 py-1 font-mono text-xs text-amber-100">mPDF</li>
+				</ul>
+				<div class="mt-6 flex gap-4 border-t border-white/10 pt-4 text-sm">
+					<a href="https://github.com/TeoST09/SoftParty" target="_blank" rel="noreferrer" class="font-medium text-slate-300 transition hover:text-white">Código ↗</a>
+					<span class="ml-auto self-center text-xs text-slate-500">Sin demo pública</span>
+				</div>
+			</div>
+		</article>
+
+		<article class="group overflow-hidden rounded-2xl border border-white/10 bg-slate-950 transition hover:-translate-y-1 hover:border-white/20">
+			<a href="https://github.com/TeoST09/cleaner" target="_blank" rel="noreferrer" aria-label="Abrir Cleaner" class="relative block h-52 overflow-hidden bg-slate-900">
+				<img src={cleanerPreview.src} alt="Interfaz de Cleaner analizando archivos temporales de Windows" loading="lazy" class="h-full w-full object-cover object-top transition duration-500 group-hover:scale-105" />
+				<span class="absolute left-5 top-4 rounded-full border border-white/20 bg-slate-950/70 px-3 py-1.5 font-mono text-xs text-white/80">Aplicación de escritorio · Windows</span>
+				<span class="absolute bottom-4 right-5 font-mono text-xs text-white/70">05 ↗</span>
+			</a>
+			<div class="p-6">
+				<h3 class="text-xl font-bold text-white">Cleaner</h3>
+				<p class="mt-3 text-sm leading-6 text-slate-400">Aplicación de escritorio y consola para analizar y limpiar archivos temporales de Windows y elementos de Prefetch, mostrando los archivos que no se pudieron eliminar.</p>
+				<ul class="mt-5 flex flex-wrap gap-2" aria-label="Tecnologías del proyecto">
+					<li class="rounded-md bg-white/10 px-2.5 py-1 font-mono text-xs text-amber-100">Node.js</li>
+					<li class="rounded-md bg-white/10 px-2.5 py-1 font-mono text-xs text-amber-100">Electron</li>
+					<li class="rounded-md bg-white/10 px-2.5 py-1 font-mono text-xs text-amber-100">JavaScript</li>
+					<li class="rounded-md bg-white/10 px-2.5 py-1 font-mono text-xs text-amber-100">Windows</li>
+				</ul>
+				<div class="mt-6 flex gap-4 border-t border-white/10 pt-4 text-sm">
+					<a href="https://github.com/TeoST09/cleaner" target="_blank" rel="noreferrer" class="font-medium text-slate-300 transition hover:text-white">Código ↗</a>
+					<a href="https://github.com/TeoST09/cleaner/releases/latest" target="_blank" rel="noreferrer" class="font-medium text-amber-200 transition hover:text-amber-100">Descargar ↗</a>
+					<span class="ml-auto self-center text-xs text-slate-500">Sin demo pública</span>
+				</div>
+			</div>
+		</article>
+
+		<article class="group overflow-hidden rounded-2xl border border-white/10 bg-slate-950 transition hover:-translate-y-1 hover:border-white/20">
+			<a href="https://lading-page0.netlify.app/" target="_blank" rel="noreferrer" aria-label="Abrir Platzi Landing Page" class="relative grid h-52 place-items-center overflow-hidden bg-gradient-to-br from-slate-800 via-slate-900 to-amber-950">
+				<span class="rounded-xl bg-amber-300 px-8 py-6 font-mono text-3xl font-bold text-slate-950">JS</span>
+				<span class="absolute left-5 top-4 rounded-full border border-white/20 bg-slate-950/70 px-3 py-1.5 font-mono text-xs text-white/80">Landing page · Tienda online</span>
+				<span class="absolute bottom-4 right-5 font-mono text-xs text-white/70">06 ↗</span>
+			</a>
+			<div class="p-6">
+				<h3 class="text-xl font-bold text-white">Platzi Landing Page</h3>
+				<p class="mt-3 text-sm leading-6 text-slate-400">Tienda ficticia responsive que carga productos desde una API y los renderiza dinámicamente. Incluye opiniones, formulario de contacto y guardado del último mensaje en localStorage.</p>
+				<ul class="mt-5 flex flex-wrap gap-2" aria-label="Tecnologías del proyecto">
+					<li class="rounded-md bg-white/10 px-2.5 py-1 font-mono text-xs text-amber-100">HTML5</li>
+					<li class="rounded-md bg-white/10 px-2.5 py-1 font-mono text-xs text-amber-100">CSS3</li>
+					<li class="rounded-md bg-white/10 px-2.5 py-1 font-mono text-xs text-amber-100">JavaScript</li>
+					<li class="rounded-md bg-white/10 px-2.5 py-1 font-mono text-xs text-amber-100">Fetch API</li>
+				</ul>
+				<div class="mt-6 flex gap-4 border-t border-white/10 pt-4 text-sm">
+					<a href="https://lading-page0.netlify.app/" target="_blank" rel="noreferrer" class="font-medium text-amber-200 transition hover:text-amber-100">Ver sitio ↗</a>
+					<a href="https://github.com/TeoST09/Platzi-Landing_page" target="_blank" rel="noreferrer" class="font-medium text-slate-300 transition hover:text-white">Código ↗</a>
+				</div>
+			</div>
+		</article>
+	</div>
+</section>

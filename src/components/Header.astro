@@ -1,0 +1,54 @@
+<header class="fixed left-1/2 top-4 z-50 w-max max-w-full -translate-x-1/2 rounded-full border border-white/10 bg-slate-900/90 p-1.5 shadow-xl backdrop-blur">
+	<nav aria-label="Navegación principal" class="flex items-center justify-center gap-1 text-xs font-medium text-slate-300 sm:text-sm">
+		<a href="#experiencia" class="nav-link rounded-full px-2.5 py-2 transition sm:px-3" aria-current="location">Trayectoria</a>
+		<a href="#proyectos" class="nav-link rounded-full px-2.5 py-2 transition sm:px-3">Proyectos</a>
+		<a href="#sobre-mi" class="nav-link rounded-full px-2.5 py-2 transition sm:px-3">Sobre mí</a>
+		<a href="#contacto" class="nav-link rounded-full px-2.5 py-2 transition sm:px-3">Contacto</a>
+		<a href="https://github.com/TeoST09" target="_blank" rel="noreferrer" aria-label="GitHub de Mateo" class="ml-1 grid h-8 w-8 place-items-center rounded-full border border-white/10 text-slate-300 transition hover:border-amber-200/40 hover:text-amber-200">
+			<img src="https://cdn.simpleicons.org/github/cbd5e1" alt="" width="16" height="16" />
+		</a>
+	</nav>
+</header>
+
+<script>
+	const links = document.querySelectorAll<HTMLAnchorElement>('.nav-link');
+
+	function updateActiveLink() {
+		let activeHash = '#experiencia';
+
+		links.forEach((link) => {
+			const section = document.querySelector(link.hash);
+
+			if (section && section.getBoundingClientRect().top < 200) {
+				activeHash = link.hash;
+			}
+		});
+
+		links.forEach((link) => {
+			if (link.hash === activeHash) {
+				link.setAttribute('aria-current', 'location');
+			} else {
+				link.removeAttribute('aria-current');
+			}
+		});
+	}
+
+	window.addEventListener('scroll', updateActiveLink);
+	updateActiveLink();
+</script>
+
+<style>
+	.nav-link {
+		color: #cbd5e1;
+	}
+
+	.nav-link:hover {
+		background-color: rgb(255 255 255 / 0.1);
+		color: white;
+	}
+
+	.nav-link[aria-current='location'] {
+		background-color: rgb(252 211 77 / 0.1);
+		color: #fde68a;
+	}
+</style>
